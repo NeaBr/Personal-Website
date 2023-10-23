@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nea Brännfors</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nea Brännfors</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          src="./assets/profile-pic-nea.png"
+          alt="Nea Brännfors Profile picture"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello I'm</p>
+        <h1 class="title">Nea Brännfors</h1>
+        <p class="section_text_p2">Software Development Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My linkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nea-br%C3%A4nnfors/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHUb profile"
+            class="icon"
+            onclick="location.href='https://github.com/NeaBr'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">Abot me</h1>
+      <div class="section-container">
+      <div class="section_pic-container">
+        <img
+          src="assets/about-pic-1.png"
+          alt="Profile picture"
+          class="about-pic"
+        />
+        </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p id="exp"></p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>
+              Ylioppilastutkinto 2021 <br />Rakennustekniikka 61 op <br />
+              Tetotekniikka 2022-
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            sequi iure porro consequuntur dolorum ratione a, nemo odit. Quasi,
+            non porro! 
+            <table style="width:100%">
+              <tr>
+                <th>Job</th>
+                <th>Firm</th>
+              </tr>
+              <tr>
+                <td>Rakennusapulainen</td>
+                <td>NCC</td>
+              </tr>
+              <tr>
+                <td>Kahvilatyäntekijä</td>
+                <td>Koivurannan Saunalautta</td>
+              </tr>
+              <tr>
+                <td>Logistiikka</td>
+                <td>Martela</td>
+              </tr>
+            </table>
+          </p>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow"
+      onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+               </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+               </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+               </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>React</h3>
+                <p>Basic</p>
+               </div>
+            </article>
+          </div>
+        </div>
+          <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>C/C++</h3>
+                <p>Intermediate</p>
+               </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>SQL</h3>
+                <p>Basic</p>
+               </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+               </div>
+            </article>
+            <article>
+              <img 
+                src="./assets/checkmark.png"
+               alt="Experience icon" 
+               class="icon"
+               />
+               <div>
+                <h3>GitHub</h3>
+                <p>Basic</p>
+               </div>
+            </article>
+          </div>
+        </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow"
+      onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+            src="./assets/schoolProject.png" 
+            alt="Project 1" 
+            class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">School Project</h2>
+          <div class="btn-container">
+            <button class="btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+            >
+            Github  
+            </button>
+          <div class="btn-container">
+            <button class="btn-color-2 project-btn"
+            onclick="demoFunction()"
+            >
+            Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+            src="./assets/project-2.png" 
+            alt="Project 1" 
+            class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+            >
+            Github  
+            </button>
+          <div class="btn-container">
+            <button class="btn-color-2 project-btn"
+            onclick="setTimeout(Function, 3000);"
+            >
+            Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <div id="dog_result" class="result">
+            </div>
+          </div>
+          <h2 class="experience-sub-title project-title">Dog picture</h2>
+          <div class="btn-container">
+            <button class="btn-color-2 project-btn"
+            id="dog_btn">
+            Get Dog
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="details-container">
+    <div class="text-container">
+      <p class="section_text_p1">Some JavaScript</p>
+      <p>JavaScript Array</p>
+      <p id="demo"></p>
+      <p> <br> JavaScript Object</p>
+      <p id="object"></p>
+      <p> <br> Here is a function that preforms a calculation and returns the result:</p>
+      <p id="calc"></p>
+      <p> <br> Here is an example of Object-Oriented JavaScript usage </p>
+      <p id="ooj"></p>
+      </div>
+    </div>
+    </div>
+      <img src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow"
+      onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" 
+          alt="Email icon"
+          class="icon contact-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" 
+          alt="linkedIn icon"
+          class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nea-br%C3%A4nnfors/">LinkedIn</a></p>
+        </div>
+      </div>
+      
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Nea Brannfors. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
